@@ -1,5 +1,5 @@
 *{
-    
+    scroll-behavior: smooth; 
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 47px;
 }
   
@@ -53,24 +53,17 @@ body{
     line-height: 300px;
 }
 
-#bakery{
-    display: grid;
-    grid-template-columns: auto auto;
-  grid-gap: 10px;
-    grid-column-gap: 50px;
-
-}
 
 .card {  
     margin: 10px;
     float: left;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
     width: 40%;
 }
   
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
 }
   
 .card-container {
@@ -83,10 +76,10 @@ body{
 
 .main{
     height: 1000px;
-
+    
 }
 
-#images-wrapper {   
+#bakery {   
       padding: 10%;     
      -webkit-column-count: 2;    
      -webkit-column-gap: 10px;    
@@ -94,16 +87,64 @@ body{
      -moz-column-gap: 10px;
       column-count: 2;    
       column-gap: 10px;    
- }  
- #images-wrapper .card {    
+}  
+#bakery .card {    
     width: 100% !important;    
     height: auto !important;  
- }  
- #images-wrapper{    
-    display:inline-block;    
-    margin-right: auto;    
-    margin-left: auto;  
- }
+}  
+
+/*gallery starts*/
+
+#gallery{
+    padding: 10%; 
+    padding-top: 0px;
+}
+.tiles{
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.tile-container{
+    height: auto;
+    overflow: auto;
+    overflow: hidden;
+}
+
+.tile-container > h4{
+    text-align: center;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 100px;
+}
+
+.tile-container > img{
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.tile-container > p{
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    text-align: justify;
+    
+}
+.left-image{
+    float: left;
+}
+.right-image{
+    float: right;
+}
+/* gallery ends*/
 @keyframes rotate {
             
 }
