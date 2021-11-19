@@ -1,0 +1,156 @@
+html{
+    background-image: url("src/pexels-larissa-farber-8027652.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+*{
+    margin: 0px;
+    padding: 0 px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container{
+    padding: 10%;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.top{
+    /*font*/
+    font-family: 'Comforter Brush', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    line-height: 100px;
+}
+.order-list{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px 0 rgba(12, 11, 11, 0.699);
+    background-color: rgba(24, 22, 22, 0.493);
+    border-radius: 15px;
+    padding: 3%;
+
+}
+.order-items{
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.card {  
+    max-width: 120px;
+    height: auto;
+    margin: 10px;
+    float: left;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card > img{
+    border-radius: 15px;
+}
+  
+.card-container {
+    border-radius: 15px;
+    letter-spacing: 2px;
+    color: rgb(12, 11, 11);
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-size: 20px;
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.order-details{
+    float: right;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    line-height: 120px;
+}
+
+.order-details > button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.205);
+    transition: 0.3s;
+}
+
+.order-details > button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.719);
+}
+.plus{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(93, 204, 79);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.minus{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(204, 87, 79);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.quantity{
+    color:white;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+}
+
+.order-now{
+    background-color: transparent;
+    border:none;
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #fffefe5d;
+    transition: 0.5s;
+}
+
+.order-now:hover{
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.order-now:active {
+    transform: translateY(8px);
+}
