@@ -39,27 +39,28 @@ input[type=number] {
     line-height: 100px;
 }
 .order-list{
-    align-items: center;
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     box-shadow: 0 4px 16px 0 rgba(12, 11, 11, 0.699);
     background-color: rgba(24, 22, 22, 0.493);
     border-radius: 15px;
     padding: 3%;
-
+    
 }
 .order-items{
     overflow: hidden;
     max-width: 600px;
+    min-width: 200px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {  
-    max-width: 120px;
+    max-width: 200px;
     height: auto;
     margin: 10px;
-    float: left;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
@@ -76,22 +77,23 @@ input[type=number] {
     color: rgb(12, 11, 11);
     font-family: 'Comforter Brush', cursive;
     font-family: 'Estonia', cursive;
-    font-size: 20px;
+    font-size: 22px;
     padding: 2px 16px;
     text-align: center;
 }
 
 .order-details{
-    float: right;
     padding: 10px;
     font-size: 24px;
     font-family: 'Comforter Brush', cursive;
     font-family: 'Estonia', cursive;
     font-family: 'Mukta', sans-serif;
-    line-height: 120px;
+    line-height: 40px;
 }
 
 .order-details > button{
+    height: 35px;
+    width: 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.205);
     transition: 0.3s;
 }
@@ -100,8 +102,6 @@ input[type=number] {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.719);
 }
 .plus{
-    height: 40px;
-    width: 40px;
     border: none;
     background-color: rgb(93, 204, 79);
     font-weight: bold;
@@ -109,8 +109,6 @@ input[type=number] {
 }
 
 .minus{
-    height: 40px;
-    width: 40px;
     border: none;
     background-color: rgb(204, 87, 79);
     font-weight: bold;
@@ -118,12 +116,12 @@ input[type=number] {
 }
 
 .quantity{
-    color:white;
+    color:rgb(12, 12, 12);
     background-color: transparent;
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Comforter Brush', cursive;
     font-family: 'Estonia', cursive;
     font-family: 'Mukta', sans-serif;
@@ -137,20 +135,26 @@ input[type=number] {
     background-color: transparent;
     border:none;
     padding: 5px;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Comforter Brush', cursive;
     font-family: 'Estonia', cursive;
     font-family: 'Mukta', sans-serif;
     font-family: 'Pacifico', cursive;
     color: white;
-    text-shadow: 2px 2px 4px #fffefe5d;
+    text-shadow: 2px 2px 4px #00000094;
     transition: 0.5s;
 }
 
 .order-now:hover{
-    text-shadow: 2px 2px 5px #ffffff;
+    text-shadow: 2px 2px 5px #0c0c0c;
 }
 
 .order-now:active {
     transform: translateY(8px);
+}
+
+@media (max-width: 800px) {
+    .order-list{
+        flex-direction: column;
+    }
 }
